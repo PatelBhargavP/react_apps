@@ -72,30 +72,52 @@ button:focus-visible {
 }
 
 body {
-  padding: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #27292c;
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background-color: #282D35;
   color: white;
 }
 
-h1 {
-  margin-top: 30px;
+.root-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 .header-image {
   width: 55px;
 }
+.header-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-left: 20px;
+  color: #61DAFB;
 
-header {
-  display: flex;
 }
 
-.nav-list {
-  list-style: none;
+header {
+  padding: 30px;
   display: flex;
-  justify-content: end;
-  li {
-    margin-left: 20px;
-    font-size: 1.1.rem;
-  }
+  justify-content: start;
+  background-color: black;
+  align-items: center;
+}
+
+.main-content {
+  padding: 30px;
+  flex: 1;
+}
+
+.line-item {
+  padding-block: 10px;
+  line-height: 19px;
+}
+.line-item::marker, .line-item::before {
+  color: #61DAFB;
+  font-size: 1.6rem;
+}
+
+.footer-content {
+  padding: 30px;
 }

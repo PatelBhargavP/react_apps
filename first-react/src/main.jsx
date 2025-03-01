@@ -1,9 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import MainContent from './Maincontent';
-import Header from './Header';
-import Footer from './Footer';
+import App from './App'
 
 /**
  * Challenge:
@@ -12,19 +10,9 @@ import Footer from './Footer';
  *   "Pricing", "About", and "Contact"
  */
 
-function Page() {
-    return (
-        <>
-            <Header />
-            <MainContent />
-            <Footer />
-        </>
-    )
-}
-
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Page />
+    <App />
   </StrictMode>,
 )
