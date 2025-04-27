@@ -12,11 +12,7 @@ function App() {
     return (
       <Entry
         title={entry.title}
-        country={entry.country}
-        googleMapsLink={entry.googleMapsLink}
-        dates={entry.dates}
-        text={entry.text}
-        image={entry.img}
+        {...entry}
       />
     );
   })
